@@ -3,7 +3,7 @@ import Editor from '@monaco-editor/react';
 import axios from 'axios';
 import { Play, Lightbulb } from 'lucide-react';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://cipher-sql-studio.vercel.app/api';
 
 export default function EditorPanel({ assignment, setResults, setLoading }) {
   const [code, setCode] = useState('-- Write your SQL query here\nSELECT * FROM ');
