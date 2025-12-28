@@ -21,6 +21,10 @@ app.use((req, res, next) => {
 // Connect Persistence DB (MongoDB) 
 connectMongo();
 
+app.get('/', (req, res) => {
+  res.send('CipherStudio Backend is running!');
+});
+
 // Routes
 app.use('/api', require('./routes/api'));
 
